@@ -23,20 +23,6 @@ spec:
         image: quay.io/brice/metrics-demo:v4-subscription-service
         ports:
         - containerPort: 3000
-        readinessProbe:
-          httpGet:
-            path: /readyz
-            port: 3000
-          initialDelaySeconds: 1
-          periodSeconds: 5
-          failureThreshold: 1
-        livenessProbe:
-          httpGet:
-            path: /healthz
-            port: 3000
-          initialDelaySeconds: 1
-          periodSeconds: 10
-          failureThreshold: 2
         resources:
           requests:
             memory: "32Mi"
