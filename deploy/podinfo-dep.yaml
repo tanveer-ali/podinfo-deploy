@@ -26,14 +26,14 @@ spec:
         readinessProbe:
           httpGet:
             path: /readyz
-            port: 9898
+            port: 3000
           initialDelaySeconds: 1
           periodSeconds: 5
           failureThreshold: 1
         livenessProbe:
           httpGet:
             path: /healthz
-            port: 9898
+            port: 3000
           initialDelaySeconds: 1
           periodSeconds: 10
           failureThreshold: 2
