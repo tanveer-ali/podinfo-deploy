@@ -20,10 +20,7 @@ spec:
     spec:
       containers:
       - name: podinfod
-        image: quay.io/brice/metrics-demo:master
-        command:
-        - ./podinfo
-        - --port=9898
+        image: quay.io/brice/metrics-demo:v4-subscription-service
         ports:
         - containerPort: 3000
         readinessProbe:
