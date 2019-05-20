@@ -1,0 +1,1 @@
+{"jobID":"dbf818c9-7738-c050-f0e9-aaa10d7b72af","spec":{"type":"policy","cause":{"Message":"","User":"Tanveer Ali \u003ctanveeralee@gmail.com\u003e"},"spec":{"dev:deployment/podinfo":{"add":{"tag.podinfod":"semver:\u003e1.4.2"},"remove":null}}},"result":null}
