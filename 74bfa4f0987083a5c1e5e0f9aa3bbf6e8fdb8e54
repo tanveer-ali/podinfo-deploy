@@ -1,0 +1,1 @@
+{"jobID":"9f536513-5450-da5f-61ad-610dd6707b6d","spec":{"type":"policy","cause":{"Message":"","User":"Tanveer Ali \u003ctanveeralee@gmail.com\u003e"},"spec":{"dev:deployment/podinfo":{"add":{"automated":"true"},"remove":null}}},"result":null}
