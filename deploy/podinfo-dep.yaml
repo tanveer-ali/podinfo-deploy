@@ -6,7 +6,6 @@ metadata:
   namespace: dev
   annotations:
     flux.weave.works/automated: 'true'
-    flux.weave.works/tag.podinfod: semver:>1.4.2
 spec:
   replicas: 4
   selector:
@@ -21,12 +20,12 @@ spec:
     spec:
       containers:
       - name: podinfod
-        image: quay.io/stefanprodan/podinfo:1.5.1
+        image: quay.io/brice/metrics-demo:v4-subscription-service
         command:
         - ./podinfo
         - --port=9898
         ports:
-        - containerPort: 9898
+        - containerPort: 3000
         readinessProbe:
           httpGet:
             path: /readyz
